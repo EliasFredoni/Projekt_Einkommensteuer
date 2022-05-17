@@ -15,19 +15,18 @@
         <section>
             <form action="">
                 <div>
-                    <input type="radio" name="auswahl" id="allein" onchange="changeInput()">
+                    <input type="radio" name="auswahl" id="allein" onchange="changeInput1()">
                     <label for="Allein">Alleine</label>
-                    <input type="radio" name="auswahl" id="zusammen" onchange="changeInput()">
+                    <input type="radio" name="auswahl" id="zusammen" onchange="changeInput2()">
                     <label for="Zusammen">Zusammen</label>
                 </div>
-                <label>zvE Person 1</label>
+                <label id="" for="">zvE Person 1</label>
                 <input id="person1" type="number">
-                <label for="">zvE Person 2</label>
+                <label id="label2" for="">zvE Person 2</label>
                 <input id="person2" type="number">
                 <label for="">Jahr</label>
                 <input type="button" value="Berechnen" onclick="berechneSteuer()">
                 <label for="">Dein Einkommenssteuersatz:</label>
-                ETYTYTYTYTTESSTSTSTSTSTSTT
                 <p id="ausgabe"></p>
             </form>
         </section>
