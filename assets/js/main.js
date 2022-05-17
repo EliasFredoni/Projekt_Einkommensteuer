@@ -81,5 +81,9 @@ const berechneSteuer2019 = (year) => {
             break;
         default: ESt = 0;
     }
-    console.log(ESt);
+
+    let ausgabe = document.getElementById("ausgabe");
+    ausgabe.innerHTML = ESt + " € ";
 }
+
+

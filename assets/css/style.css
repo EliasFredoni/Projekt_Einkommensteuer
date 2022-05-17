@@ -31,7 +31,8 @@ section {
 }
 
 div {
-  padding-bottom: 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 form {
@@ -45,11 +46,23 @@ form {
   display: none;
 }
 
+label,
+input,
+select {
+  padding: 4px;
+}
+
+
 p {
   height: 1.6rem;
+  color: darkblue;
+  padding: 3%;
+  font-size: 1.8rem;
 }
 
 input[type="button"] {
   background-color: #226CA3;
+  border-radius: 5px;
   color: #fff;
+  padding: 5px;
 }
