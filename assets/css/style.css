@@ -30,34 +30,27 @@ section {
   width: 400px;
 }
 
-div {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-form {
+form,
+h1 {
   display: flex;
   flex-direction: column;
-  padding: 0 5%;
+  padding: 5% 7%;
 }
 
-#label2,
-#person2 {
-  display: none;
-}
-
-label,
 input,
 select {
-  padding: 4px;
+  padding: 5px 0;
+  margin-bottom: 15px;
 }
-
 
 p {
   height: 1.6rem;
+  width: 55%;
+  margin: 2px 0;
   color: darkblue;
   padding: 3%;
   font-size: 1.8rem;
+  background-color: white;
 }
 
 input[type="button"] {
@@ -65,4 +58,9 @@ input[type="button"] {
   border-radius: 5px;
   color: #fff;
   padding: 5px;
+}
+
+#label2,
+#person2 {
+  display: none;
 }

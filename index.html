@@ -13,6 +13,7 @@
 
     <main>
         <section>
+            <h1>Einkommen- und Kirchensteuerrechner</h1>
             <form action="">
                 <div>
                     <input type="radio" name="auswahl" id="allein" onchange="changeInput1()" checked="checked">
@@ -36,7 +37,7 @@
                     <option value="0.09">9%</option>
                     <option value="0.08">8% (Bayern, BW)</option>
                 </select>
-                <input type="button" value="Berechnen" onclick="berechneSteuer2019()">
+                <input type="button" value="Berechnen" onclick="berechneSteuer()">
                 <label for="">Dein Einkommenssteuersatz:</label>
                 <p id="ausgabe"></p>
                 <label for="">Dein Kirchensteuersatz:</label>

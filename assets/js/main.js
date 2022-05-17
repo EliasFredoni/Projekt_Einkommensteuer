@@ -17,7 +17,7 @@ const changeInput2 = () => {
     person2.style.display = 'block';
 }
 
-const berechneSteuer2019 = (year) => {
+const berechneSteuer = (year) => {
     let zvE = 0;
     let person1 = Number(document.getElementById('person1').value);
     let person2 = Number(document.getElementById('person2').value);
