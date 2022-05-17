@@ -26,13 +26,13 @@
                 <label id="label2">Zu versteuerndes Einkommen Person 2</label>
                 <input id="person2" type="number" min="0.00" step="0.01">
                 <label for="years">Jahr</label>
-                <select name="years" id="years">
+                <select name="years" id="years" onchange="berechneSteuer()">
                     <option value="2019">2019</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                 </select>
                 <label for="kirchensteuersatz">Kirchensteuer</label>
-                <select name="kirchensteuersatz" id="kirchensteuersatz">
+                <select name="kirchensteuersatz" id="kirchensteuersatz" onchange="berechneSteuer()">
                     <option value="0">keine</option>
                     <option value="0.09">9%</option>
                     <option value="0.08">8% (Bayern, BW)</option>

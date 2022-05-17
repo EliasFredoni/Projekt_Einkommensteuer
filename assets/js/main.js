@@ -1,6 +1,4 @@
-
-'use strict'
-
+// Auswahl Alleine oder gemeinsame Veranlagung: Textfeld
 const changeInput1 = () => {
     let label2 = document.getElementById('label2');
     let person2 = document.getElementById('person2');
@@ -17,22 +15,25 @@ const changeInput2 = () => {
     person2.style.display = 'block';
 }
 
+// Rechenkern
 const berechneSteuer = (year) => {
     let zvE = 0;
+    let ESt = 0;
+    let y = 0;
+    let z = 0;
     let person1 = Number(document.getElementById('person1').value);
     let person2 = Number(document.getElementById('person2').value);
     let showPerson2 = document.getElementById('person2');
     let years = document.getElementById('years').value;
-    let ESt = 0;
-    let y = 0;
-    let z = 0;
 
+    //Abfrage ob Alleine oder gemeinsame Veranlagung: Berechnung
     if (showPerson2.style.display === 'block') {
         zvE = (person1 + person2) / 2;
     } else {
         zvE = person1;
     }
 
+    //Berechnung der ESt unter Berücksichtigung der Jahre
     switch (years) {
         case '2019':
             y = (zvE - 9168) / 10000;
@@ -83,13 +84,13 @@ const berechneSteuer = (year) => {
     }
     ESt = ESt.toFixed(2);
 
+    //Ausgabe der ESt
     let ausgabe = document.getElementById("ausgabe");
     ausgabe.innerHTML = (ESt + " € ").replace('.', ',');
 
+    //Berechnung und Ausgabe der Kirchensteuer
     let ausgabe2 = document.getElementById("ausgabe2");
     let kirchensteuersatz = document.getElementById("kirchensteuersatz").value;
     let kirchensteuer = (kirchensteuersatz * ESt).toFixed(2);
     ausgabe2.innerHTML = (kirchensteuer + " € ").replace('.', ',');
 }
-
-
