@@ -18,14 +18,14 @@ const changeInput2 = () => {
 }
 
 const berechneSteuer2019 = (year) => {
-    let zvE = '';
+    let zvE = 0;
     let person1 = Number(document.getElementById('person1').value);
     let person2 = Number(document.getElementById('person2').value);
     let showPerson2 = document.getElementById('person2');
     let years = document.getElementById('years').value;
-    let ESt = '';
-    let y = '';
-    let z = '';
+    let ESt = 0;
+    let y = 0;
+    let z = 0;
 
     if (showPerson2.style.display === 'block') {
         zvE = (person1 + person2) / 2;
@@ -81,9 +81,15 @@ const berechneSteuer2019 = (year) => {
             break;
         default: ESt = 0;
     }
+    ESt = ESt.toFixed(2);
 
     let ausgabe = document.getElementById("ausgabe");
-    ausgabe.innerHTML = ESt + " € ";
+    ausgabe.innerHTML = (ESt + " € ").replace('.', ',');
+
+    let ausgabe2 = document.getElementById("ausgabe2");
+    let kirchensteuersatz = document.getElementById("kirchensteuersatz").value;
+    let kirchensteuer = (kirchensteuersatz * ESt).toFixed(2);
+    ausgabe2.innerHTML = (kirchensteuer + " € ").replace('.', ',');
 }
 
 
