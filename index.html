@@ -14,16 +14,16 @@
     <main>
         <section>
             <h1>Einkommen- und Kirchensteuerrechner</h1>
-            <form action="">
+            <form>
                 <div>
                     <input type="radio" name="auswahl" id="allein" onchange="changeInput1()" checked="checked">
-                    <label for="Allein">Alleine</label>
+                    <label for="allein">Alleine</label>
                     <input type="radio" name="auswahl" id="zusammen" onchange="changeInput2()">
-                    <label for="Zusammen">Zusammen</label>
+                    <label for="zusammen">Zusammen</label>
                 </div>
-                <label id="" for="">Zu versteuerndes Einkommen Person 1</label>
+                <label>Zu versteuerndes Einkommen Person 1</label>
                 <input id="person1" type="number" min="0.00" step="0.01">
-                <label id="label2" for="">Zu versteuerndes Einkommen Person 2</label>
+                <label id="label2">Zu versteuerndes Einkommen Person 2</label>
                 <input id="person2" type="number" min="0.00" step="0.01">
                 <label for="years">Jahr</label>
                 <select name="years" id="years">
@@ -38,9 +38,9 @@
                     <option value="0.08">8% (Bayern, BW)</option>
                 </select>
                 <input type="button" value="Berechnen" onclick="berechneSteuer()">
-                <label for="">Dein Einkommenssteuersatz:</label>
+                <label>Dein Einkommenssteuersatz:</label>
                 <p id="ausgabe"></p>
-                <label for="">Dein Kirchensteuersatz:</label>
+                <label>Dein Kirchensteuersatz:</label>
                 <p id="ausgabe2"></p>
             </form>
         </section>
