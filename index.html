@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project California-calling</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <form action="">
+                <div>
+                    <input type="radio" name="auswahl" id="allein" onchange="changeInput()">
+                    <label for="Allein">Alleine</label>
+                    <input type="radio" name="auswahl" id="zusammen" onchange="changeInput()">
+                    <label for="Zusammen">Zusammen</label>
+                </div>
+                <label>zvE Person 1</label>
+                <input id="person1" type="number">
+                <label for="">zvE Person 2</label>
+                <input id="person2" type="number">
+                <label for="">Jahr</label>
+                <input type="button" value="Berechnen" onclick="berechneSteuer()">
+                <label for="">Dein Einkommenssteuersatz:</label>
+                <p id="ausgabe"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

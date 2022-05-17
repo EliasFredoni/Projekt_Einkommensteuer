@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 5%;
+}
+
+
+main {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+section {
+  background-color: #F3F6F8;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  width: 400px;
+}
+
+div {
+  padding-bottom: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+p {
+  height: 1.6rem;
+}
+
+input[type="button"] {
+  background-color: #226CA3;
+  color: #fff;
+
+}
