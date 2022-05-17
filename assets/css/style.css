@@ -40,6 +40,11 @@ form {
   padding: 0 5%;
 }
 
+#label2,
+#person2 {
+  display: none;
+}
+
 p {
   height: 1.6rem;
 }
@@ -47,5 +52,4 @@ p {
 input[type="button"] {
   background-color: #226CA3;
   color: #fff;
-
 }
